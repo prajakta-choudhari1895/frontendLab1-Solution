@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <title>Bar Graph</title>
+    <link rel="stylesheet" href="MenuDropdown.css">
+    <style>
+        body{
+            height:0%;
+
+        }
+        #bargraph{
+            background-color: whitesmoke;
+            top:10%;
+            left:40%;
+        }
+
+        #bargraph article{
+            display: inline-block;
+        }
+
+        div{
+            width:40px;
+            height: 300px;
+            margin: 20px;
+            background-color: rgb(202,192,198);
+        }
+
+        #bar1{
+            width: 100%;
+            height:70%;
+            background-color: white;
+            animation-name: barplot1;
+            animation-duration: 2s;
+        }
+
+        @keyframes barplot1{
+            0%{height:100%;
+            background-color: white;}
+            100%{height:70%;background-color: white;}
+        }
+
+        #bar2{
+            width: 100%;
+            height:60%;
+            background-color: white;
+            animation-name: barplot2;
+            animation-duration: 2s;
+        }
+
+        @keyframes barplot2{
+            0%{height:100%;
+            background-color: white;}
+            100%{height:60%;background-color: white;}
+        }
+
+        #bar3{
+            width: 100%;
+            height:50%;
+            background-color: white;
+            animation-name: barplot3;
+            animation-duration: 2s;
+        }
+
+        @keyframes barplot3{
+            0%{height:100%;
+            background-color: white;}
+            100%{height:50%;background-color: white;}
+        }
+    </style>
+    <body>
+        <section id="bargraph">
+            <article>
+                <div>
+                    <article id="bar1"></article>
+                </div>
+                <p>30%</p>
+            </article>
+
+            <article>
+                <div>
+                    <article id="bar2"></article>
+                </div>
+                <p>40%</p>
+            </article>
+
+            <article>
+                <div>
+                    <article id="bar3"></article>
+                </div>
+                <p>50%</p>
+            </article>
+        </section>
+    </body>
